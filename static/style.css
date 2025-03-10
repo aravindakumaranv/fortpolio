@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap');
+
+* {
+    font-family: 'Oswald', sans-serif; /* Apply Oswald font to all elements */
+}
+
+html, body {
+    background-color: black;
+    color: #50d292;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    height: 100vh; /* Full viewport height */
+    text-align: center; /* Center text */
+    flex-direction: column; /* Align items in a column */
+    overflow: hidden; /* Remove scrollbars */
+}
+
+header {
+    background-color: transparent; /* Make header transparent */
+    color: #50d292;
+    padding: 1rem;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end; /* Aligns the navigation links to the right */
+    margin-right: 2rem; /* Add right margin to the navbar */
+}
+
+nav ul li {
+    margin-left: 1rem; /* Adds space between the navigation links */
+}
+
+nav ul li a {
+    color: #50d292;
+    text-decoration: none;
+}
+
+main {
+    padding: 1rem;
+    font-size: 1.5rem; /* Make content bigger */
+    flex: 1; /* Allow main content to grow and fill space */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer {
+    background-color: transparent; /* Make footer transparent */
+    color: #50d292;
+    text-align: center;
+    padding: 1rem;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Toggle button styles */
+.theme-toggle {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 2rem;
+    color: #50d292;
+}
+
+.sun-icon {
+    display: inline;
+}
+
+.moon-icon {
+    display: none;
+}
+
+body.light-mode .sun-icon {
+    display: none;
+}
+
+body.light-mode .moon-icon {
+    display: inline;
+}
+
+html.light-mode, body.light-mode {
+    background-color: white;
+    color: #50d292; /* Keep font color consistent */
+}
