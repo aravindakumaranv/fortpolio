@@ -5,7 +5,7 @@ This is a simple Flask portfolio website project. It serves as a starting point 
 ## Project Structure
 
 ```
-flask-portfolio
+fortpolio
 ├── app
 │   ├── __init__.py
 │   ├── routes.py
