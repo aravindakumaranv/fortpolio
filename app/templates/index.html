@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Your Name</h1>
+        <p>Web Developer | Designer | Programmer</p>
+    </header>
+    <main>
+        <section>
+            <h2>About Me</h2>
+            <p>
+                Welcome to my portfolio website! I am passionate about building web applications and learning new technologies.
+            </p>
+        </section>
+        <section class="projects">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Project Title 1</h3>
+                <p>Short description of your project. <a href="#">View on GitHub</a></p>
+            </div>
+            <div class="project">
+                <h3>Project Title 2</h3>
+                <p>Short description of your project. <a href="#">View on GitHub</a></p>
+            </div>
+        </section>
+        <section>
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Your Name. All rights reserved.</p>
+    </footer>
+</body>
+</html>
